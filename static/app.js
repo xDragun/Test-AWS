@@ -17,6 +17,8 @@
     phase: "loading",    // loading | start | quiz | results
     playerName: "",
     questionCount: 0,
+    startTime: null,     // Date.now() when quiz starts
+    endTime: null,       // Date.now() when quiz ends
   };
 
   const $main = document.getElementById("main-content");
@@ -122,6 +124,8 @@
       state.evaluated = new Array(state.questionCount).fill(false);
       state.score = 0;
       state.currentIndex = 0;
+      state.startTime = Date.now();
+      state.endTime = null;
 
       state.phase = "quiz";
       render();
@@ -199,6 +203,7 @@
     }
 
     $main.innerHTML = `
+      <div class="quiz-screen">
       <!-- Progress -->
       <div class="progress-section">
         <div class="progress-info">
@@ -228,6 +233,7 @@
           ← Anterior
         </button>
         ${actionBtnHTML}
+      </div>
       </div>`;
 
     // ── Event Listeners ──
@@ -277,6 +283,7 @@
     const btnFinish = document.getElementById("btn-finish");
     if (btnFinish) {
       btnFinish.addEventListener("click", () => {
+        state.endTime = Date.now();
         state.phase = "results";
         render();
       });
@@ -290,6 +297,10 @@
     const incorrect = total - correct;
     const pct = Math.round((correct / total) * 100);
     const passed = pct >= 70;
+
+    // Elapsed time
+    const elapsedMs = (state.endTime || Date.now()) - state.startTime;
+    const elapsedStr = formatTime(elapsedMs);
 
     // Score ring SVG
     const circumference = 2 * Math.PI * 76; // radius=76
@@ -363,6 +374,10 @@
               <div class="results-stat__value results-stat__value--total">${total}</div>
               <div class="results-stat__label">Total</div>
             </div>
+            <div class="results-stat">
+              <div class="results-stat__value" style="color: var(--aws-teal);">\u23f1 ${elapsedStr}</div>
+              <div class="results-stat__label">Tiempo</div>
+            </div>
           </div>
         </div>
 
@@ -434,5 +449,16 @@
       }
     }
     requestAnimationFrame(update);
+  }
+
+  function formatTime(ms) {
+    const totalSec = Math.floor(ms / 1000);
+    const hours = Math.floor(totalSec / 3600);
+    const mins = Math.floor((totalSec % 3600) / 60);
+    const secs = totalSec % 60;
+    if (hours > 0) {
+      return `${hours}h ${String(mins).padStart(2, "0")}m ${String(secs).padStart(2, "0")}s`;
+    }
+    return `${mins}m ${String(secs).padStart(2, "0")}s`;
   }
 })();
