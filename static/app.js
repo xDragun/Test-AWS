@@ -345,7 +345,7 @@
 
           <!-- Score Ring -->
           <div class="score-ring">
-            <svg width="180" height="180" viewBox="0 0 180 180">
+            <svg width="100%" height="100%" viewBox="0 0 180 180">
               <circle class="score-ring__bg" cx="90" cy="90" r="76" />
               <circle class="score-ring__fill"
                 cx="90" cy="90" r="76"
