@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cuestionario interactivo de preparación para AWS – Herramientas y Servicios" />
+  <title>AWS Quiz · Herramientas y Servicios</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁️</text></svg>" />
+</head>
+<body>
+
+  <div class="container" id="app">
+    <!-- ─── Header ─────────────────────────────────────────────────── -->
+    <header class="app-header">
+      <div class="app-header__logo">
+        <div class="app-header__icon">☁️</div>
+        <div class="app-header__brand"><span>AWS</span> Quiz</div>
+      </div>
+      <p class="app-header__subtitle">Herramientas y Servicios de Amazon Web Services</p>
+    </header>
+
+    <!-- ─── Main Content (JS-driven) ───────────────────────────────── -->
+    <main id="main-content">
+      <div class="loading">
+        <div class="spinner"></div>
+        <p class="loading__text">Cargando preguntas…</p>
+      </div>
+    </main>
+
+    <!-- ─── Footer ──────────────────────────────────────────────────── -->
+    <footer class="app-footer">
+      AWS TEST --- Herramienta hecha por Alex Segovia D. para que se certifique este Wueon !!!
+    </footer>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

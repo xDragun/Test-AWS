@@ -1,0 +1,544 @@
+1. ¿Cuál es la definición correcta de los roles IAM?
+   [ ] Usuarios de IAM en varios grupos
+   [ ] Una política de contraseñas
+   [ ] Permisos asignados a los usuarios para realizar acciones
+   [X] Una entidad IAM que define un conjunto de permisos para realizar solicitudes de servicios de AWS, que serán utilizados por los servicios de AWS (CORRECTA)
+
+2. ¿Cuál de las siguientes es una herramienta de seguridad IAM?
+   [ ] Administrador de cuentas root IAM (IAM Root Account Manager)
+   [ ] Informe de los servicios IAM (IAM Services Report)
+   [ ] Asesor de Seguridad IAM (IAM Security Advisor)
+   [X] Informe de credenciales IAM (IAM Credentials Report) (CORRECTA)
+
+3. ¿Qué respuesta es INCORRECTA respecto a los usuarios de IAM?
+   [ ] Los usuarios de IAM pueden pertenecer a varios grupos
+   [ ] Los usuarios de IAM no tienen que pertenecer a un grupo
+   [ ] Los usuarios de IAM pueden tener políticas asignadas
+   [X] Los usuarios de IAM acceden a AWS con las credenciales de la cuenta root (CORRECTA - Es la afirmación falsa)
+
+4. ¿Cuál de las siguientes es una buena práctica de IAM?
+   [ ] Crear varios usuarios para una persona física
+   [ ] Compartir credenciales para que un compañero pueda realizar una tarea por ti
+   [ ] No actives la MFA para facilitar el acceso
+   [X] No utilices la cuenta de usuario raíz/root (CORRECTA)
+
+5. ¿Qué son las políticas IAM?
+   [ ] Acciones realizables de los servicios de AWS
+   [ ] Reglas para establecer una contraseña para los usuarios de IAM
+   [X] Documentos JSON para definir los permisos de Usuarios, Grupos o Roles (CORRECTA)
+
+6. En el modelo de responsabilidad compartida, ¿de qué es responsable el cliente en IAM?
+   [ ] Seguridad de las infraestructuras
+   [ ] Validación de la normativa
+   [ ] Análisis de configuración y vulnerabilidad
+   [X] Asignar a los usuarios las políticas IAM adecuadas (CORRECTA)
+
+7. ¿Cuál de las siguientes afirmaciones es VERDADERA?
+   [ ] El SDK de AWS puede interactuar con AWS mediante comandos en tu shell de línea de comandos, mientras que la CLI de AWS puede interactuar con AWS mediante programación.
+   [X] La CLI de AWS puede interactuar con AWS mediante comandos en tu shell de línea de comandos, mientras que el SDK de AWS puede interactuar con AWS mediante programación. (CORRECTA)
+
+8. ¿Qué principio debes aplicar con respecto a los permisos de IAM?
+   [ ] Conceder la mayoría de los privilegios
+   [ ] Concede permisos si tu empleado te lo pide
+   [ ] Restringir los permisos de la cuenta root
+   [X] Conceder el menor privilegio (CORRECTA)
+
+9. ¿Qué debes hacer para aumentar la seguridad de tu cuenta root?
+   [ ] Eliminar los permisos de la cuenta root
+   [ ] Utiliza AWS sólo a través de la interfaz de línea de comandos (CLI)
+   [X] Activa la autenticación multifactorial (MFA) (CORRECTA)
+
+10. ¿Qué clase de almacenamiento S3 es la más rentable para archivar datos sin necesidad de tiempo de recuperación?
+    [ ] Amazon Glacier
+    [X] Amazon Glacier Deep Archive (CORRECTA)
+    [ ] Amazon S3 Standard-Infrequent Access
+    [ ] Amazon S3 Intelligent Tiering
+
+11. ¿Qué servicio híbrido de AWS se utiliza para permitir que los servidores locales utilicen sin problemas el Cloud de AWS en la capa de almacenamiento?
+    [ ] EBS
+    [ ] Snowball
+    [ ] S3
+    [X] Storage Gateway (CORRECTA)
+
+12. ¿Qué almacenamiento de EC2 utilizarías para crear un sistema de archivos de red compartido para tus instancias de EC2?
+    [ ] Volumen EBS
+    [ ] Almacén de instancias EC2
+    [ ] Snapshots de EBS
+    [X] EFS (Respuesta Correcta)
+
+13. ¿Qué servicio puede utilizarse para automatizar los procesos de gestión de imágenes?
+    [ ] AMI
+    [X] Constructor de imágenes EC2 (EC2 Image Builder) (Respuesta Correcta)
+    [ ] Snapshots de EBS
+    [ ] IAM
+
+14. ¿Cuál de los siguientes es un sistema de archivos nativo de Microsoft Windows totalmente gestionado?
+    [ ] EFS
+    [X] FSx (Respuesta Correcta)
+    [ ] EBS
+
+15. ¿Para qué NO se utilizan las AMI?
+    [ ] Añade tu propia licencia de software
+    [ ] Añade tu propia configuración
+    [ ] Añade tu propio sistema operativo
+    [X] Añade tus propias direcciones IP (Respuesta Correcta)
+
+16. Los volúmenes EBS NO pueden adjuntarse a varias instancias EC2 a la vez.
+    [X] Verdadero (Respuesta Correcta - Regla general para la evaluación)
+    [ ] Falso
+
+17. Un volumen EBS es una unidad de red que puedes adjuntar a tus instancias mientras se ejecutan, para que los datos de tus instancias persistan incluso después de su finalización.
+    [X] Verdadero (Respuesta Correcta)
+    [ ] Falso
+
+18. ¿Qué afirmación es CORRECTA respecto al almacén de instancias EC2?
+    [ ] No es bueno utilizarlo como disco para almacenar contenidos en caché
+    [X] Tiene un mejor rendimiento de E/S, pero los datos se pierden si la Instancia EC2 se termina (Respuesta Correcta)
+    [ ] Tus datos están siempre seguros con el almacén de instancias EC2
+
+19. ¿Qué es un Snapshot de EBS?
+    [ ] El sistema operativo en una Instancia EC2
+    [X] Una copia de seguridad de tu volumen EBS en un momento dado (Respuesta Correcta)
+    [ ] La cantidad de CPU y RAM de una Instancia EC2
+
+20. ¿Dónde puedes encontrar una AMI de terceros para poder utilizarla para lanzar tu Instancia EC2?
+    [ ] AMIs públicas
+    [ ] Mis propias AMIs
+    [X] AMIs de AWS Marketplace (Respuesta Correcta)
+
+21. ¿A qué está vinculado un Volumen EBS?
+    [ ] Una región
+    [ ] Un centro de datos
+    [ ] Una Edge Location
+    [X] Una zona de disponibilidad (Respuesta Correcta)
+
+22. Quieres crear una cadena de bloques descentralizada en AWS. ¿Qué servicio de AWS utilizarías?
+    [ ] DocumentDB
+    [ ] QLDB
+    [X] Managed Blockchain (Respuesta Correcta)
+    [ ] QuickSight
+
+23. ¿Qué base de datos de AWS es un almacén de datos?
+    [ ] DynamoDB
+    [ ] ElastiCache
+    [X] Redshift (Respuesta Correcta)
+    [ ] RDS
+
+24. ¿Qué servicio de AWS es siempre sin servidor y tiene capacidades SQL?
+    [ ] RDS
+    [ ] Aurora
+    [ ] DynamoDB
+    [X] Athena (Respuesta Correcta)
+
+25. Te gustaría utilizar un servicio sin servidor para preparar los datos y poder cargarlos para el análisis. ¿Qué servicio utilizarías?
+    [ ] Athena
+    [ ] RDS
+    [X] Glue (Respuesta Correcta)
+    [ ] ElastiCache
+
+26. ¿Qué base de datos relacional es una tecnología propia de AWS y está optimizada para la nube?
+    [ ] DynamoDB
+    [ ] Oracle
+    [ ] Athena
+    [X] Aurora (Respuesta Correcta)
+
+27. Te gustaría migrar las bases de datos a AWS y seguir utilizando la base de datos durante la migración. ¿Qué servicio te permite hacerlo?
+    [ ] Elastic MapReduce (EMR)
+    [X] Database Migration Service (DMS) (Respuesta Correcta)
+    [ ] AWS Storage Gateway
+    [ ] Snowball
+
+28. ¿Cómo puedes crear clusters Hadoop para analizar y procesar una gran cantidad de datos?
+    [X] EMR (Respuesta Correcta)
+    [ ] Athena
+    [ ] EC2 Instances
+    [ ] Redshift
+
+29. ¿Qué base de datos en memoria de AWS puedes utilizar para reducir la carga de las bases de datos y tiene un alto rendimiento y baja latencia?
+    [ ] Redshift
+    [X] ElastiCache (Respuesta Correcta)
+    [ ] RDS
+    [ ] DynamoDB
+
+30. ¿Cuál es el nombre de un repositorio central para almacenar los metadatos estructurales y operativos de los activos de datos en AWS Glue?
+    [ ] Glue Data Table (Tabla de datos de Glue)
+    [ ] Glue Data Dictionary (Diccionario de datos de Glue)
+    [X] Glue Data Catalog (Catálogo de Datos de Glue) (Respuesta Correcta)
+
+31. ¿Cuál de las siguientes bases de datos es un servicio gestionado con capacidad SQL adecuado para el procesamiento de transacciones en línea (OLTP)?
+    [ ] DynamoDB
+    [ ] Redshift
+    [X] RDS (Respuesta Correcta)
+    [ ] MySQL en EC2
+
+32. ¿Qué servicio de AWS es una base de datos de libro mayor inmutable?
+    [X] QLDB (Respuesta Correcta)
+    [ ] EMR
+    [ ] Managed Blockchain
+    [ ] Inspector
+
+33. Te gustaría crear una base de datos NoSQL que pueda escalar sin tiempo de inactividad y que pueda manejar millones de peticiones por segundo. ¿Qué base de datos de AWS es la más adecuada para este trabajo?
+    [X] DynamoDB (Respuesta Correcta)
+    [ ] RDS
+    [ ] Redshift
+    [ ] Athena
+
+34. ¿Qué servicio de AWS puede crear gráficos complejos para la detección de fraudes?
+    [ ] Redshift
+    [X] Neptune (Respuesta Correcta)
+    [ ] QLDB
+    [ ] Glue
+
+35. ¿Qué servicio sin servidor de AWS puede utilizar la inteligencia empresarial impulsada por el Machine Learning para crear dashboards interactivos, como el análisis empresarial?
+    [X] QuickSight (Respuesta Correcta)
+    [ ] Aurora
+    [ ] Athena
+    [ ] Managed Blockchain
+
+36. Una empresa quiere crear una base de datos MongoDB totalmente gestionada. ¿Qué base de datos de AWS es la más adecuada para esta tarea?
+    [X] DocumentDB (Respuesta Correcta)
+    [ ] ElastiCache
+    [ ] RDS
+    [ ] Neptune
+
+37. ¿Qué característica exclusiva de DynamoDB es una caché en memoria que puede mejorar su rendimiento hasta 10 veces?
+    [ ] ElastiCache
+    [ ] Edge Locations
+    [X] DynamoDB Accelerator (Respuesta Correcta)
+    [ ] Snowball Edge
+
+38. El objetivo principal de los despliegues RDS Multi-AZ es la alta disponibilidad, mientras que el objetivo principal de las réplicas RDS Read es la escalabilidad.
+    [X] Verdadero (Respuesta Correcta)
+    [ ] Falso
+
+39. ¿Cómo se cobra en AWS Lambda?
+    [ ] Por lenguaje de programación
+    [ ] Por número de funciones
+    [X] Por llamada y por duración (CORRECTA)
+    [ ] Por tiempo de inactividad
+
+40. Quieres un servicio sin servidor para lanzar contenedores Docker sin necesidad de aprovisionar infraestructura. ¿Qué servicio de AWS deberías utilizar?
+    [ ] ECS
+    [X] Fargate (CORRECTA)
+    [ ] ECR
+    [ ] Lambda
+
+41. Un completo principiante en el Cloud quiere crear una aplicación sencilla con precios predecibles. ¿Qué servicio debería utilizar esta persona?
+    [ ] EC2
+    [ ] Lambda
+    [X] Lightsail (CORRECTA)
+    [ ] EasyStart
+
+42. ¿Cómo se llama la plataforma de desarrollo de software que permite ejecutar las aplicaciones de la misma manera, independientemente de dónde se ejecuten?
+    [ ] Dolphin
+    [ ] Shark
+    [X] Docker (CORRECTA)
+    [ ] ECS
+
+43. ¿Cuál es la mejor manera de describir "dirigido por eventos" en AWS Lambda?
+    [ ] Ocurre en un día determinado
+    [ ] Ocurre en un momento determinado
+    [ ] Ocurre con regularidad
+    [X] Se produce cuando es necesario (CORRECTA)
+
+44. ¿Qué servicio de AWS te permite lanzar contenedores Docker en AWS, pero requiere que aprovisiones y mantengas la infraestructura?
+    [ ] ECR
+    [ ] EC2
+    [X] ECS (CORRECTA)
+    [ ] Fargate
+
+45. ¿Cuál de las siguientes afirmaciones es INCORRECTA respecto a la definición del término "sin servidor"?
+    [ ] La tecnología sin servidor te permite desplegar funciones como un servicio
+    [X] No hay servidores (CORRECTA - Es la afirmación incorrecta)
+    [ ] No necesitas gestionar servidores
+    [ ] Lambda es el pionero sin servidor
+
+46. ¿Cuál de las siguientes afirmaciones NO es una característica de AWS Lambda?
+    [ ] Integración con todo el conjunto de servicios de AWS
+    [ ] Funciones virtuales
+    [ ] Escalado automatizado y continuo
+    [X] Definición de un mínimo y un máximo de Instancias EC2 en funcionamiento (CORRECTA - No es característica)
+
+47. Una empresa necesita ejecutar miles de trabajos, pero le gustaría NO gestionar los recursos informáticos. ¿Qué servicio puede utilizar?
+    [ ] ECS
+    [ ] Instancias de Spot de EC2
+    [ ] Instancias EC2
+    [X] Batch (CORRECTA)
+
+48. ¿Dónde debes almacenar tus imágenes Docker privadas para que puedan ser ejecutadas por ECS o Fargate?
+    [ ] Elastic Docker Registry
+    [ ] Elastic Docker File Registry
+    [X] Elastic Container Registry (CORRECTA)
+    [ ] Elastic Private Container Registry
+
+49. ¿Qué servicio sin servidor de AWS pueden utilizar los desarrolladores para crear APIs?
+    [ ] ECR
+    [ ] Lambda
+    [X] API Gateway (CORRECTA)
+
+50. ¿Qué servicio gestionado de AWS permite automatizar los despliegues de software en una mezcla híbrida de instancias EC2 y servidores On-Premise?
+    [X] CodeDeploy (Respuesta correcta)
+    [ ] CloudFormation
+    [ ] Elastic Beanstalk
+    [ ] CodeStar
+
+51. Un equipo de desarrolladores quiere colaborar en el código con soporte de versiones. ¿Qué servicio de AWS puede ayudar a los desarrolladores?
+    [ ] CodeDeploy
+    [X] CodeCommit (Respuesta correcta)
+    [ ] CodePipeline
+    [ ] Cloud9
+
+52. Necesitas una interfaz de usuario unificada que te proporcione visibilidad, control y capacidad de aplicación de parches para tus instancias EC2 en AWS, así como para los servidores que se ejecutan en tus centros de datos locales. ¿Qué servicio debes utilizar?
+    [ ] Storage Gateway
+    [ ] OpsWorks
+    [ ] Elastic Container Service
+    [X] Systems Manager (Respuesta correcta)
+
+53. Un desarrollador quiere desplegar una infraestructura en AWS, pero sólo sabe Python. ¿Qué servicio de AWS puede ayudarle?
+    [ ] Software Development Kit (SDK)
+    [X] Cloud Development Kit (CDK) (Respuesta correcta)
+    [ ] CloudFormation
+    [ ] CodeBuild
+
+54. ¿Cuál de las siguientes opciones te permite desplegar cualquier Infraestructura como Código de AWS?
+    [ ] Elastic Beanstalk
+    [ ] OpsWorks
+    [X] CloudFormation (Respuesta correcta)
+    [ ] Systems Manager
+
+55. ¿Qué servicio se denomina Plataforma como Servicio (PaaS)?
+    [X] Elastic Beanstalk (Respuesta correcta)
+    [ ] OpsWorks
+    [ ] CloudFormation
+    [ ] EC2
+
+56. ¿Cómo se llama la declaración de los recursos AWS que componen un stack?
+    [ ] CloudFormation Schemas
+    [ ] CloudFormation Diagrams
+    [X] CloudFormation Templates (Respuesta correcta)
+    [ ] CloudFormation Models
+
+57. ¿Cuál de los siguientes servicios puede utilizar un desarrollador para almacenar dependencias de código?
+    [ ] CodeBuild
+    [ ] CodeCommit
+    [ ] Cloud9
+    [X] CodeArtifact (Respuesta correcta)
+
+58. ¿Qué servicio sin servidor puede utilizarse para construir código y ejecutar pruebas?
+    [ ] CodeStar
+    [ ] Cloud Development Kit (CDK)
+    [ ] CodePipeline
+    [X] CodeBuild (Respuesta correcta)
+
+59. CloudFormation y Elastic Beanstalk son de uso gratuito.
+    [X] Verdadero (Respuesta correcta)
+    [ ] Falso
+
+60. ¿Qué políticas de enrutamiento de la Ruta 53 utilizarías para dirigir el tráfico a varios recursos en las proporciones que especifiques?
+    [ ] Simple Routing Policy
+    [X] Weighted Routing Policy (Respuesta correcta)
+    [ ] Latency Routing Policy
+    [ ] Failover Routing Policy
+
+61. ¿Qué servicio está optimizado para desplegar aplicaciones de latencia ultrabaja en dispositivos 5G?
+    [X] WaveLength (Respuesta correcta)
+    [ ] Route 53
+    [ ] CloudFront
+
+62. Necesitas habilitar transferencias rápidas, fáciles y seguras de archivos a larga distancia en S3. ¿Qué servicio utilizarías?
+    [ ] AWS Global Accelerator
+    [X] S3 Transfer Acceleration (Respuesta correcta)
+    [ ] S3 Cross-Region Replication
+
+63. ¿Qué utiliza AWS CloudFront para mejorar el rendimiento de lectura?
+    [ ] Protección DDoS
+    [ ] Buckets S3 de lectura rápida
+    [X] Almacenamiento de contenido en Edge Locations (Respuesta correcta)
+    [ ] Almacenamiento en caché del contenido en las regiones de borde
+
+64. ¿Qué servicio puede utilizarse para ejecutar la infraestructura y los servicios de AWS en las instalaciones para una arquitectura de nube híbrida?
+    [ ] CloudFront
+    [X] Outposts (Respuesta correcta)
+    [ ] DMS
+    [ ] Storage Gateway
+
+65. ¿Cuál de las siguientes afirmaciones NO es una razón para una aplicación global?
+    [ ] Disminución de la latencia
+    [ ] Recuperación de catástrofes
+    [X] Escala elásticamente bajo demanda (Respuesta correcta)
+    [ ] Protección contra ataques
+
+66. ¿Qué funciones están disponibles con Route 53?
+    [ ] Comprobaciones de salud, escalado automático, política de enrutamiento, DNS
+    [ ] Load Balancing, DNS, Registro de dominios, Monitorización
+    [ ] Registro de dominios, DNS, comprobaciones de salud, protección DDoS
+    [X] Registro de dominios, DNS, comprobaciones de salud, política de enrutamiento (Respuesta correcta)
+
+67. ¿Con qué servicios se integra CloudFront para protegerse de los ataques web?
+    [X] WAF y Shield (Respuesta correcta)
+    [ ] WAF y IAM
+    [ ] IAM y Shield
+    [ ] Grupos de seguridad y WAF
+
+68. ¿Por qué AWS es más económico que los centros de datos tradicionales para aplicaciones con diferentes cargas de trabajo de cómputo?
+    [ ] Los costos de Amazon EC2 se facturan de forma mensual.
+    [ ] Los usuarios mantienen el acceso administrativo total a sus instancias de Amazon EC2.
+    [X] Las instancias de Amazon EC2 se pueden lanzar bajo demanda cuando sea necesario. (Respuesta Correcta)
+    [ ] Los usuarios pueden ejecutar de forma permanente instancias suficientes para manejar los aumentos de las cargas de trabajo.
+
+69. ¿Qué producto de AWS simplificaría la migración de una base de datos a AWS?
+    [ ] AWS Storage Gateway
+    [X] AWS Database Migration Service (AWS DMS) (Respuesta Correcta)
+    [ ] Amazon EC2
+    [ ] Amazon AppStream 2.0
+
+70. ¿Qué oferta de AWS permite a los usuarios encontrar, comprar y comenzar a utilizar de forma inmediata soluciones de software en su entorno de AWS?
+    [ ] AWS Config
+    [ ] AWS OpsWorks
+    [ ] AWS SDK
+    [X] AWS Marketplace (Respuesta Correcta)
+
+71. ¿Qué producto de redes de AWS le permite a una empresa crear una red virtual dentro de AWS?
+    [ ] AWS Config
+    [ ] Amazon Route 53
+    [ ] AWS Direct Connect
+    [X] Amazon Virtual Private Cloud (Amazon VPC) (Respuesta Correcta)
+
+72. ¿Cuál de las siguientes es una responsabilidad de AWS según el modelo de responsabilidad compartida de AWS?
+    [ ] Configuración de aplicaciones de terceros
+    [X] Mantenimiento del hardware físico (Respuesta Correcta)
+    [ ] Protección del acceso a la aplicación y de sus datos
+    [ ] Administración de sistemas operativos invitados
+
+73. ¿Qué componente de la infraestructura global de AWS utiliza Amazon CloudFront para garantizar una entrega con baja latencia?
+    [ ] Regiones de AWS
+    [X] Ubicaciones de borde (Respuesta Correcta)
+    [ ] Zonas de disponibilidad
+    [ ] Virtual Private Cloud (VPC)
+
+74. ¿Cómo podría agregar el administrador del sistema una capa de seguridad adicional durante el inicio de sesión a la consola de administración de AWS de un usuario?
+    [ ] Mediante Amazon Cloud Directory
+    [ ] Por medio de una auditoría de los roles de AWS Identity and Access Management (IAM)
+    [X] Mediante la habilitación de la autenticación multifactor (Respuesta Correcta)
+    [ ] Mediante la habilitación de AWS CloudTrail
+
+75. ¿Qué servicio puede identificar al usuario que realizó la llamada a la API cuando termina una instancia de Amazon EC2?
+    [ ] AWS Trusted Advisor
+    [X] AWS CloudTrail (Respuesta Correcta)
+    [ ] AWS X-Ray
+    [ ] AWS Identity and Access Management (AWS IAM)
+
+76. ¿Qué servicio se utilizaría para enviar alertas basadas en alarmas de Amazon CloudWatch?
+    [X] Amazon Simple Notification Service (Amazon SNS) (Respuesta Correcta)
+    [ ] AWS CloudTrail
+    [ ] AWS Trusted Advisor
+    [ ] Amazon Route 53
+
+77. ¿Dónde puede encontrar información un usuario sobre las acciones prohibidas en la infraestructura de AWS?
+    [ ] AWS Trusted Advisor
+    [ ] AWS Identity and Access Management (IAM)
+    [ ] Consola de facturación de AWS
+    [X] Política de uso aceptable de AWS (Respuesta Correcta)
+
+78. Una aplicación de gestión de relaciones con clientes (CRM) se ejecuta en instancias de Amazon EC2 en múltiples Zonas de Disponibilidad detrás de un Application Load Balancer. Si una de estas instancias falla, ¿qué ocurre?
+    [X] El Application Load Balancer deja de enviar tráfico a la instancia hasta que pase las comprobaciones de salud. (Respuesta Correcta)
+    [ ] El tráfico se redirige a una zona de disponibilidad diferente.
+    [ ] La instancia se reemplaza automáticamente por una nueva.
+    [ ] Se envía una notificación a los administradores.
+
+79. Una empresa necesita realizar procesamiento asíncrono y tiene Amazon SQS como parte de una arquitectura desacoplada. La empresa quiere asegurarse de que el número de respuestas vacías de las solicitudes de sondeo sea mínimo. ¿Qué debe hacer un arquitecto de soluciones para reducir las respuestas vacías?
+    [ ] Usar sondeo corto (short polling) para obtener respuestas más rápidas.
+    [X] Habilitar el sondeo largo (long polling) configurando ReceiveMessageWaitTimeSeconds en un valor mayor que cero. (Respuesta Correcta)
+    [ ] Aumentar el número de consumidores.
+    [ ] Usar una cola FIFO en lugar de una cola estándar.
+
+80. Una empresa almacena actualmente datos para aplicaciones locales en unidades locales. El director de tecnología quiere reducir los costos de hardware almacenando los datos en Amazon S3, pero no quiere hacer modificaciones a las aplicaciones. Para minimizar la latencia, los datos de acceso frecuente deben estar disponibles localmente. ¿Cuál es una solución confiable y duradera que implementaría un arquitecto de soluciones para reducir el costo del almacenamiento local?
+    [ ] Usar AWS Snowball para migrar los datos a S3.
+    [ ] Configurar una réplica de S3 entre regiones.
+    [X] Implementar AWS Storage Gateway en modo de volúmenes en caché. (Respuesta Correcta)
+    [ ] Usar Amazon EFS con sincronización local.
+
+81. Una empresa ejecuta una aplicación web pública de tres niveles en una VPC en varias Zonas de Disponibilidad. Las instancias de Amazon EC2 para el nivel de aplicación que se ejecutan en subredes privadas necesitan descargar parches de software desde Internet. Sin embargo, las instancias no pueden ser directamente accesibles desde Internet. ¿Qué acciones se deben tomar?
+    [ ] Asignar direcciones IP públicas a las instancias.
+    [X] Crear una puerta de enlace NAT en una subred pública y actualizar la tabla de enrutamiento de la subred privada. (Respuesta Correcta)
+    [ ] Usar un proxy HTTP en las instancias.
+    [ ] Configurar un balanceador de carga de red.
+
+82. Un desarrollador está creando una API REST sin estado usando AWS Lambda como backend para Amazon API Gateway. ¿Qué servicio debe usar para almacenar de forma segura las credenciales de la base de datos?
+    [ ] AWS IAM
+    [ ] AWS Systems Manager Parameter Store
+    [X] AWS Secrets Manager (Respuesta Correcta)
+    [ ] AWS Key Management Service (KMS)
+
+83. Una empresa está migrando una aplicación web heredada de un único servidor a múltiples instancias de Amazon EC2 detrás de un Application Load Balancer (ALB). Después de la migración, los usuarios informan que pierden sus sesiones con frecuencia y se les solicita que inicien sesión nuevamente. ¿Qué acción se debe tomar para resolver el problema?
+    [ ] Migrar la aplicación a una base de datos centralizada.
+    [X] Habilitar sticky sessions (sesiones persistentes) en el Application Load Balancer. (Respuesta Correcta)
+    [ ] Usar una política de enrutamiento de latencia.
+    [ ] Aumentar el número de instancias.
+
+84. Un equipo de SysOps revisa el AWS Personal Health Dashboard cada semana para ver los próximos eventos de mantenimiento de hardware de AWS. Recientemente, un miembro del equipo estaba de vacaciones y el equipo perdió un evento, lo que resultó en una interrupción. El equipo quiere un método simple para asegurarse de que no se pierdan eventos críticos en el futuro. ¿Qué deben hacer?
+    [ ] Configurar una alarma de CloudWatch que se active cuando el Personal Health Dashboard tenga un nuevo evento.
+    [X] Configurar una regla de Amazon EventBridge para reenviar eventos del Personal Health Dashboard a un tema de Amazon SNS. (Respuesta Correcta)
+    [ ] Asignar a múltiples miembros del equipo la responsabilidad de revisar el tablero.
+    [ ] Usar AWS Config para monitorear los cambios en el estado de la salud.
+
+85. La red local de su empresa tiene un rango de direcciones IP de 11.11.0.0/16. Solo las IP dentro de este rango de red pueden usarse para la comunicación entre servidores. El rango de direcciones IP 11.11.253.0/24 se ha asignado para la nube. Necesita diseñar una VPC en AWS. Los servidores dentro de la VPC deben poder comunicarse con hosts tanto en Internet como en las instalaciones a través de una conexión VPN. ¿Qué combinación de pasos de configuración cumple con sus necesidades? (Elija 2)
+    [ ] A) Configurar la VPC con un rango de direcciones IP de 11.11.253.0/24.
+    [ ] B) Configurar la VPC con un rango de direcciones IP privadas RFC 1918 (por ejemplo, 10.10.10.0/24), y configurar una puerta de enlace NAT para hacer la traducción entre 10.10.10.0/24 y 11.11.253.0/24 para todo el tráfico saliente.
+    [X] C) Configurar una conexión VPN entre una VGW y un router local, configurar la VGW como la puerta de enlace predeterminada para todo el tráfico, y configurar el router local para reenviar el tráfico a Internet. (Respuesta Correcta)
+    [X] D) Configurar una conexión VPN entre una VGW y un router local, configurar la VGW como la puerta de enlace predeterminada para el tráfico destinado a 11.11.0.0/24, y agregar una ruta de subred de VPC para apuntar la puerta de enlace predeterminada a una puerta de enlace de Internet para el tráfico de Internet. (Respuesta Correcta)
+    [ ] E) Configurar la VPC con un rango de direcciones IP privadas RFC 1918 (por ejemplo, 10.10.10.0/24), y configurar la VGW para hacer una traducción de IP de origen de todos los paquetes salientes a 11.11.0.0/16.
+
+86. Sus instancias de servidor de aplicaciones residen en la subred privada de su VPC. Estas instancias necesitan acceder a un repositorio Git en Internet. Usted crea una puerta de enlace NAT en la subred pública de su VPC. La puerta de enlace NAT puede alcanzar el repositorio Git, pero las instancias en la subred privada no pueden. Usted confirma que una ruta predeterminada en la tabla de enrutamiento de la subred privada apunta a la puerta de enlace NAT. El grupo de seguridad para sus instancias de servidor de aplicaciones permite todo el tráfico hacia la puerta de enlace NAT. ¿Qué cambio de configuración debe hacer para asegurarse de que estas instancias puedan alcanzar el servidor de parches?
+    [ ] Asignar direcciones IP públicas a las instancias y enrutar 0.0.0.0/0 a la puerta de enlace de Internet.
+    [X] Configurar una regla de salida en el grupo de seguridad de las instancias del servidor de aplicaciones para el repositorio Git. (Respuesta Correcta)
+    [ ] Configurar listas de control de acceso a la red (network ACLs) de entrada para permitir el tráfico desde el repositorio Git a la subred pública.
+    [ ] Configurar una regla de entrada en el grupo de seguridad de las instancias del servidor de aplicaciones para el repositorio Git.
+
+87. Su empresa ha instalado una conexión AWS Direct Connect en una ubicación Direct Connect en ap-southeast-1. Se configura una interfaz virtual pública a través de un router hacia un firewall dedicado. Usted anuncia el bloque CIDR público /24 de su empresa a AWS con AS 65500. La empresa mantiene un firewall de Internet corporativo separado para mapear todo el tráfico saliente a una única IP. Este firewall mantiene una relación BGP con un proveedor de Internet upstream que ha delegado el bloque de IP públicas que usa su empresa. Cuando la sesión BGP para la interfaz virtual pública está activa, los usuarios de la red corporativa no pueden acceder a los recursos de Amazon S3 en la región ap-southeast-1. ¿Qué paso debe tomar para proporcionar acceso concurrente a AWS e Internet?
+    [ ] Configurar prepending de AS-PATH para la interfaz virtual pública.
+    [ ] Anunciar una ruta de host para el firewall corporativo en la interfaz virtual pública.
+    [X] Anunciar una ruta más específica (por ejemplo, 11.11.253.0/24) para el tráfico de AWS a través de la interfaz virtual pública. (Respuesta Correcta)
+    [ ] Configurar una interfaz virtual privada adicional.
+
+88. Un equipo de Machine Learning usa Amazon SageMaker para entrenar un clasificador de dígitos escritos a mano con Apache MXNet utilizando un conjunto de datos de investigación. El equipo quiere recibir una notificación cuando el entrenamiento haya finalizado. ¿Qué servicio debe usarse para enviar la notificación?
+    [ ] Amazon SQS
+    [X] Amazon SNS (Respuesta Correcta)
+    [ ] Amazon EventBridge
+    [ ] AWS Lambda
+
+89. Una empresa necesita un almacén de datos totalmente gestionado, a escala de petabytes, con almacenamiento columnar. ¿Qué servicio de AWS es el más adecuado?
+    [ ] Amazon RDS
+    [X] Amazon Redshift (Respuesta Correcta)
+    [ ] Amazon DynamoDB
+    [ ] Amazon Aurora
+
+90. ¿Qué servicio de AWS proporciona detección continua de amenazas mediante el análisis de registros de VPC Flow Logs, registros de DNS y eventos de CloudTrail?
+    [ ] AWS Config
+    [X] Amazon GuardDuty (Respuesta Correcta)
+    [ ] Amazon Inspector
+    [ ] AWS Security Hub
+
+91. Un administrador de SysOps está implementando una aplicación en 10 instancias de Amazon EC2. La aplicación debe tener alta disponibilidad. Las instancias deben colocarse en hardware subyacente distinto. ¿Qué estrategia de implementación debe utilizar?
+    [X] Usar un grupo de Auto Scaling con varias Zonas de Disponibilidad. (Respuesta Correcta)
+    [ ] Usar instancias reservadas en una única Zona de Disponibilidad.
+    [ ] Usar instancias Spot en varias regiones.
+    [ ] Usar un balanceador de carga clásico.
+
+92. ¿Qué servicio de AWS permite aprovisionar y administrar la infraestructura como código?
+    [ ] AWS OpsWorks
+    [X] AWS CloudFormation (Respuesta Correcta)
+    [ ] AWS Elastic Beanstalk
+    [ ] AWS Systems Manager
+
+93. ¿Qué servicio de AWS proporciona un repositorio de control de fuentes totalmente gestionado que se integra de forma nativa con CodePipeline?
+    [X] AWS CodeCommit (Respuesta Correcta)
+    [ ] AWS CodeBuild
+    [ ] AWS CodeDeploy
+    [ ] AWS CodeArtifact
+
+94. Una empresa quiere implementar despliegues blue/green utilizando servicios de AWS. ¿Qué servicio debe utilizar para dirigir el tráfico entre los dos entornos?
+    [ ] Amazon Route 53
+    [X] AWS Elastic Load Balancing (ELB) (Respuesta Correcta)
+    [ ] AWS Global Accelerator
+    [ ] Amazon CloudFront
