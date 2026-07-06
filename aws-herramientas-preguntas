@@ -542,3 +542,28 @@
     [X] AWS Elastic Load Balancing (ELB) (Respuesta Correcta)
     [ ] AWS Global Accelerator
     [ ] Amazon CloudFront
+
+95. Una empresa que utiliza Apache ActiveMQ está migrando a la Cloud. ¿Qué servicio de AWS puede utilizar para configurar y operar fácilmente sus corredores de mensajes en el Cloud?
+    [ ] Amazon SQS
+    [ ] Amazon SNS
+    [X] Amazon MQ (Respuesta Correcta)
+    [ ] Amazon Kinesis
+
+96. ¿Qué servicio es un servicio de mensajería pub/sub totalmente gestionado que facilita la configuración, el funcionamiento y el envío de notificaciones desde la Cloud, mediante un sistema basado en push?
+    [X] Simple Notification Service (SNS) (Respuesta Correcta)
+    [ ] Simple Queue Service (SQS)
+    [ ] Auto Scaling Groups (ASG)
+
+97. ¿Puedes utilizar Kinesis para realizar análisis en tiempo real a partir de flujos de vídeo?
+    [X] Verdadero (Respuesta Correcta)
+    [ ] Falso
+
+98. ¿Qué principio se aplica principalmente al utilizar Amazon SQS o Amazon SNS?
+    [ ] Escalabilidad
+    [ ] Automatización
+    [X] Desacopla tus aplicaciones (Respuesta Correcta)
+
+99. ¿Qué servicio te permite enviar, almacenar y recibir mensajes entre componentes de software a cualquier volumen, sin perder mensajes ni requerir que otros servicios estén disponibles, utilizando un sistema basado en la extracción?
+    [ ] Simple Notification Service (SNS)
+    [X] Simple Queue Service (SQS) (Respuesta Correcta)
+    [ ] Auto Scaling Groups (ASG)
