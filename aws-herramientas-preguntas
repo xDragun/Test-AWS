@@ -543,27 +543,53 @@
     [ ] AWS Global Accelerator
     [ ] Amazon CloudFront
 
-95. Una empresa que utiliza Apache ActiveMQ está migrando a la Cloud. ¿Qué servicio de AWS puede utilizar para configurar y operar fácilmente sus corredores de mensajes en el Cloud?
-    [ ] Amazon SQS
-    [ ] Amazon SNS
-    [X] Amazon MQ (Respuesta Correcta)
-    [ ] Amazon Kinesis
+95. ¿Qué función de CloudWatch utilizarías para activar las notificaciones cuando una métrica alcance un umbral que especifiques?
+    [ ] CloudWatch Events
+    [ ] CloudWatch Logs
+    [X] CloudWatch Alarms (Respuesta Correcta)
+    [ ] CloudWatch Triggers
 
-96. ¿Qué servicio es un servicio de mensajería pub/sub totalmente gestionado que facilita la configuración, el funcionamiento y el envío de notificaciones desde la Cloud, mediante un sistema basado en push?
-    [X] Simple Notification Service (SNS) (Respuesta Correcta)
-    [ ] Simple Queue Service (SQS)
-    [ ] Auto Scaling Groups (ASG)
+96. ¿Qué servicio de AWS ayuda a los desarrolladores a analizar y depurar aplicaciones tanto de producción como distribuidas?
+    [ ] CloudWatch
+    [X] X-Ray (Respuesta Correcta)
+    [ ] Service Health Dashboard
+    [ ] CloudTrail
 
-97. ¿Puedes utilizar Kinesis para realizar análisis en tiempo real a partir de flujos de vídeo?
-    [X] Verdadero (Respuesta Correcta)
-    [ ] Falso
+97. ¿Qué servicio de AWS proporciona alertas y orientación de corrección cuando AWS está experimentando eventos que pueden afectarte?
+    [ ] Service Health Dashboard
+    [ ] CloudWatch
+    [X] Personal Health Dashboard (Respuesta Correcta)
+    [ ] CloudTrail
 
-98. ¿Qué principio se aplica principalmente al utilizar Amazon SQS o Amazon SNS?
-    [ ] Escalabilidad
-    [ ] Automatización
-    [X] Desacopla tus aplicaciones (Respuesta Correcta)
+98. Tienes que configurar la monitorización de las métricas de cada servicio en AWS. ¿Qué servicio utilizarías?
+    [ ] CloudTrail
+    [ ] X-Ray
+    [X] CloudWatch (Respuesta Correcta)
+    [ ] Personal Health Dashboard
 
-99. ¿Qué servicio te permite enviar, almacenar y recibir mensajes entre componentes de software a cualquier volumen, sin perder mensajes ni requerir que otros servicios estén disponibles, utilizando un sistema basado en la extracción?
-    [ ] Simple Notification Service (SNS)
-    [X] Simple Queue Service (SQS) (Respuesta Correcta)
-    [ ] Auto Scaling Groups (ASG)
+99. ¿Qué función de monitorización del Cloud puedes utilizar para detectar actividades inusuales en tu cuenta, como el aprovisionamiento inexacto de recursos o la superación de los límites de servicio?
+    [ ] CloudWatch Metrics
+    [ ] CloudWatch Logs
+    [X] CloudTrail Insights (Respuesta Correcta)
+    [ ] X-Ray
+
+100. ¿Qué servicio te permite inspeccionar, auditar y registrar los eventos y las llamadas a la API realizadas en tu cuenta de AWS?
+    [ ] X-Ray
+    [ ] CloudWatch
+    [X] CloudTrail (Respuesta Correcta)
+
+101. ¿Qué servicio de AWS analiza automáticamente el código y proporciona recomendaciones de rendimiento?
+    [ ] X-Ray
+    [ ] CodePipeline
+    [X] CodeGuru (Respuesta Correcta)
+
+102. ¿Cómo describirías Amazon CloudWatch Logs?
+    [X] Un servicio único y altamente escalable que centraliza los logs de todos tus sistemas, aplicaciones y servicios de AWS que utilizas (Respuesta Correcta)
+    [ ] Un servicio que proporciona un flujo de eventos del sistema en tiempo real que describe los cambios en los recursos de AWS
+    [ ] Un servicio que permite la gobernanza, la normativa, la auditoría operativa y la auditoría de riesgos de tu cuenta de AWS
+    [ ] Un servicio que te permite ejecutar código sin necesidad de aprovisionar o gestionar servidores
+
+103. Si se elimina un recurso en AWS, ¿qué servicio debes utilizar para investigar primero?
+    [X] CloudTrail (Respuesta Correcta)
+    [ ] CloudWatch Logs
+    [ ] Personal Health Dashboard
